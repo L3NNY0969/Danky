@@ -42,7 +42,6 @@ async def on_guild_remove(guild):
 
 @bot.command()
 async def ping(ctx):
-"""Want to play some p0ng?"""
 await ctx.send(f"{bot.latency * 1000:.4f} ms dUde")
 
 
