@@ -46,7 +46,6 @@ async def invite(ctx):
     await ctx.send("b00M! https://discordapp.com/oauth2/authorize?client_id=497244124399796235&scope=bot&permissions=8")                       
 
 
-
 if not os.environ.get('TOKEN'):
-    print("no token found m8")
-bot.run(os.environ.get('TOKEN').strip('"'))
+    print("no token m8")
+bot.run(os.environ.get('TOKEN').strip('"'))    
