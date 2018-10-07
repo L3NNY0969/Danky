@@ -45,6 +45,12 @@ async def invite(ctx):
     """Allow me to join dat server."""
     await ctx.send("b00M! https://discordapp.com/oauth2/authorize?client_id=497244124399796235&scope=bot&permissions=8")                       
 
+    
+@bot.command()
+async def support(ctx):
+    """join my lit support server""" 
+    await ctx.send("time to join! https://discord.gg/FEPNu3A")   
+    
 
 if not os.environ.get('TOKEN'):
     print("no token m8")
