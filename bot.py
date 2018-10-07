@@ -41,8 +41,9 @@ async def on_guild_remove(guild):
 
 
 @bot.command()
-async def ping(ctx):
-await ctx.send(f"{bot.latency * 1000:.4f} ms dUde")
+async def invite(ctx):
+    """Allow me to join dat server."""
+    await ctx.send("b00M! https://discordapp.com/oauth2/authorize?client_id=497244124399796235&scope=bot&permissions=8")                       
 
 
 
