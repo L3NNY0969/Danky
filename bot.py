@@ -25,7 +25,7 @@ async def on_guild_join(guild):
     em.set_thumbnail(url=guild.icon_url)
     await lol.send(embed=em)
     try:
-        await guild.channels[0].send(f"Hello my peeps. Im a discord bot created by TheCountryJapan#1557. Try me out by doing ``+help``!")
+        await guild.channels[0].send(f"Hello my peeps. Im a discord bot created by TheCountryJapan#1557. Try me out by doing ``?help``!")
     except discord.Forbidden:
         pass
 
@@ -53,5 +53,5 @@ async def support(ctx):
     
 
 if not os.environ.get('TOKEN'):
-    print("no token m8")
-bot.run(os.environ.get('TOKEN').strip('"'))    
+    print("no token found REEEE!")
+bot.run(os.environ.get('TOKEN').strip('"'))
