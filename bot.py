@@ -43,13 +43,13 @@ async def on_guild_remove(guild):
 @bot.command()
 async def invite(ctx):
     """Allow me to join dat server."""
-    await ctx.send("b00M! https://discordapp.com/oauth2/authorize?client_id=497244124399796235&scope=bot&permissions=8")                       
+    await ctx.send("b00M! https://bit.ly/2yrvur5")                       
 
     
 @bot.command()
 async def support(ctx):
     """join my lit support server""" 
-    await ctx.send("time to join! https://discord.gg/FEPNu3A")   
+    await ctx.send("Yo, what you waiting for? https://bit.ly/2ROSCYB")   
     
 
 if not os.environ.get('TOKEN'):
