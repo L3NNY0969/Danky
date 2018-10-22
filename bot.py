@@ -12,7 +12,7 @@ import textwrap
 import inspect
 from discord.ext import commands
 import json
-bot = commands.Bot(command_prefix=commands.when_mentioned_or('?'), description="A bot made by TheContryJapan\n\nHelp Commands", owner_id=250346017671741440)
+bot = commands.Bot(command_prefix=commands.when_mentioned_or('?'), description="A discord bot\n\nHelp Commands", owner_id=250346017671741440)
 
 
 @bot.event
