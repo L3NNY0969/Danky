@@ -12,6 +12,7 @@ import textwrap
 import inspect
 from discord.ext import commands
 import json
+
 bot = commands.Bot(command_prefix=commands.when_mentioned_or('?'), description="A discord bot\n\nHelp Commands", owner_id=250346017671741440)
 
 
@@ -25,7 +26,7 @@ async def on_guild_join(guild):
     em.set_thumbnail(url=guild.icon_url)
     await lol.send(embed=em)
     try:
-        await guild.channels[0].send(f"Hello my peeps. Im a discord bot created by TheCountryJapan#1557. Try me out by doing ``?help``!")
+        await guild.channels[0].send(f"Hello my peeps. Im a discord bot created by L3NNY. Try me out by doing ``?help``!")
     except discord.Forbidden:
         pass
 
@@ -53,5 +54,5 @@ async def support(ctx):
     
 
 if not os.environ.get('TOKEN'):
-    print("no token found REEEE!")
+    print("no token found Please put one in the ENV VARS!")
 bot.run(os.environ.get('TOKEN').strip('"'))
